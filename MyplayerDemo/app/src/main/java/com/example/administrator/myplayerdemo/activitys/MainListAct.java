@@ -17,6 +17,10 @@ import com.example.administrator.myplayerdemo.test.ContainerComponent;
 import com.example.administrator.myplayerdemo.test.DaggerActivityComponent;
 import com.example.administrator.myplayerdemo.test.DaggerContainerComponent;
 import com.example.administrator.myplayerdemo.test.Student;
+import com.example.administrator.myplayerdemo.views.ParallaxScrollViewActivity;
+import com.example.administrator.myplayerdemo.views.Zuniview;
+import com.example.parallaxmylib.ParallaxScrollView;
+
 import java.util.List;
 import javax.inject.Inject;
 
@@ -32,7 +36,7 @@ public class MainListAct extends ListActivity {
        test.SetName("fdy");
         test.SetAge(30);
         Log.i("gsc",test.getName());
-        String[] mdatas={"生成二维码图片","输入网络地址生成二维码","实例网络地址和二维码","添加到数据库Db","添加表单验证库的使用例子","手势解锁例子","验证手势例子"};
+        String[] mdatas={"生成二维码图片","输入网络地址生成二维码","实例网络地址和二维码","添加到数据库Db","添加表单验证库的使用例子","手势解锁例子","验证手势例子","listview阻尼效果视图","scrollview阻尼效果视图"};
         getListView().setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,mdatas));
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -58,6 +62,12 @@ public class MainListAct extends ListActivity {
                         break;
                     case 6:
                         startActivity(new Intent(MainListAct.this,SampleConfirmPatternActivity.class));
+                        break;
+                    case 7:
+                        startActivity(new Intent(MainListAct.this,Zuniview.class));
+                        break;
+                    case 8:
+                        startActivity(new Intent(MainListAct.this,ParallaxScrollViewActivity.class));
                         break;
                 }
             }

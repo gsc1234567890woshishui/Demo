@@ -47,6 +47,8 @@
         <activity android:name="me.zhanghai.android.patternlock.SetPatternActivity"></activity>
     <activity android:name=".lock.SampleConfirmPatternActivity"></activity>
         <activity android:name="me.zhanghai.android.patternlock.ConfirmPatternActivity"></activity>
+    <activity android:name=".views.Zuniview"></activity>
+        <activity android:name=".views.ParallaxScrollViewActivity"></activity>
     </application>
 
 </manifest>
