@@ -1,4 +1,4 @@
-package com.example.administrator.myplayerdemo.forms;
+package com.example.administrator.myplayerdemo.base;
 
 import android.app.Activity;
 import android.os.Bundle;

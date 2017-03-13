@@ -1,12 +1,11 @@
 package com.example.administrator.myplayerdemo.forms;
 
-import android.app.Activity;
-import android.provider.ContactsContract;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
 import com.example.administrator.myplayerdemo.R;
+import com.example.administrator.myplayerdemo.base.BaseAct;
 
 import eu.inmite.android.lib.validations.form.FormValidator;
 import eu.inmite.android.lib.validations.form.annotations.NotEmpty;
@@ -19,7 +18,7 @@ import static eu.inmite.android.lib.validations.form.annotations.RegExp.EMAIL;
  * Created by Administrator on 2017/3/13 0013.
  */
 
-public class FormAct extends BaseAct{
+public class FormAct extends BaseAct {
     @NotEmpty(messageId = R.string.name, order = 1)
     private EditText ed;
     @RegExp(value = EMAIL,messageId = R.string.email,order = 2)
