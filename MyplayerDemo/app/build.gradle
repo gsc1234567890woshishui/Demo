@@ -23,7 +23,10 @@ android {
     }
 
 }
-
+repositories{
+    flatDir {
+        dirs 'libs'    }
+}
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -39,5 +42,9 @@ dependencies {
     apt 'com.google.dagger:dagger-compiler:2.0.2'
     compile 'org.glassfish:javax.annotation:10.0-b28'
     compile project(':library')
-    compile project(':lpatternlockibrary')//手势解锁库
+   // compile project(':lpatternlockibrary')
+    compile(name:'lpatternlockibrary', ext:'aar')
+   // complie(name:'lpatternlockibrary')
+    //手势解锁库
+    compile files('libs/robodemo-lib-1.0.1.jar')
 }
