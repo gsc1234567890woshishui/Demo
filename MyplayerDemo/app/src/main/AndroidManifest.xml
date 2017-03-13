@@ -41,6 +41,8 @@
         <activity android:name=".activitys.ThirdCenter"></activity>
         <activity android:name=".activitys.AddPage"></activity>
         <activity android:name=".activitys.MakeQrbitmap1"></activity>
+        <!---表单验证库页面-->
+        <activity android:name=".forms.FormAct"></activity>
     </application>
 
 </manifest>
