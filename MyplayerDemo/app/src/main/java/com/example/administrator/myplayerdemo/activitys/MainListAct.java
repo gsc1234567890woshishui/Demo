@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import com.example.administrator.myplayerdemo.forms.FormAct;
 import com.example.administrator.myplayerdemo.lock.LockTest;
 import com.example.administrator.myplayerdemo.lock.SampleConfirmPatternActivity;
+import com.example.administrator.myplayerdemo.tabs.Tab1;
 import com.example.administrator.myplayerdemo.test.ActivityComponent;
 import com.example.administrator.myplayerdemo.test.ContainerComponent;
 import com.example.administrator.myplayerdemo.test.DaggerActivityComponent;
@@ -36,7 +37,7 @@ public class MainListAct extends ListActivity {
        test.SetName("fdy");
         test.SetAge(30);
         Log.i("gsc",test.getName());
-        String[] mdatas={"生成二维码图片","输入网络地址生成二维码","实例网络地址和二维码","添加到数据库Db","添加表单验证库的使用例子","手势解锁例子","验证手势例子","listview阻尼效果视图","scrollview阻尼效果视图"};
+        String[] mdatas={"生成二维码图片","输入网络地址生成二维码","实例网络地址和二维码","添加到数据库Db","添加表单验证库的使用例子","手势解锁例子","验证手势例子","listview阻尼效果视图","scrollview阻尼效果视图","Tabs"};
         getListView().setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,mdatas));
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -68,6 +69,9 @@ public class MainListAct extends ListActivity {
                         break;
                     case 8:
                         startActivity(new Intent(MainListAct.this,ParallaxScrollViewActivity.class));
+                        break;
+                    case 9:
+                        startActivity(new Intent(MainListAct.this,Tab1.class));
                         break;
                 }
             }

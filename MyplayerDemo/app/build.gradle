@@ -48,4 +48,5 @@ dependencies {
     //手势解锁库
     compile files('libs/robodemo-lib-1.0.1.jar')
     compile (name: 'parallaxmylib',ext: 'aar')
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
 }

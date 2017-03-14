@@ -49,6 +49,7 @@
         <activity android:name="me.zhanghai.android.patternlock.ConfirmPatternActivity"></activity>
     <activity android:name=".views.Zuniview"></activity>
         <activity android:name=".views.ParallaxScrollViewActivity"></activity>
+        <activity android:name=".tabs.Tab1"></activity>
     </application>
 
 </manifest>
