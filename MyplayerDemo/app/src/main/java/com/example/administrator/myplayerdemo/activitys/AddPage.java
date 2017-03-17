@@ -53,7 +53,7 @@ public class AddPage extends Activity {
         //初始化db 配置 设置数据库名字,版本号
         x.view().inject(this);
         initdbconfig();
-      selectdb();
+//      selectdb();
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
