@@ -39,6 +39,7 @@ public class MainListAct extends ListActivity {
         Log.i("gsc",test.getName());
         String[] mdatas={"生成二维码图片","输入网络地址生成二维码","实例网络地址和二维码","添加到数据库Db","添加表单验证库的使用例子","手势解锁例子","验证手势例子","listview阻尼效果视图","scrollview阻尼效果视图","Tabs"};
         getListView().setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,mdatas));
+
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
