@@ -11,12 +11,14 @@ import com.bumptech.glide.Glide;
 import com.example.administrator.myplayerdemo.R;
 import com.example.administrator.myplayerdemo.interfaces.Irecyler;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2017/3/17 0017.
  */
 
 public class MyrvAdapter extends RecyclerView.Adapter<MyrvAdapter.Vh> {
-    private String[] urls;
+    private List<String> urls;
     private Context ctx;
 Irecyler is;
 
@@ -24,7 +26,7 @@ Irecyler is;
         this.is = is;
     }
 
-    public MyrvAdapter(String[] urls, Context ctx) {
+    public MyrvAdapter(List<String> urls, Context ctx) {
         this.urls = urls;
         this.ctx = ctx;
     }
@@ -35,7 +37,7 @@ Irecyler is;
     }
     @Override
     public void onBindViewHolder(final MyrvAdapter.Vh holder, int position) {
-        Glide.with(ctx).load(urls[position]).into(holder.iv);
+        Glide.with(ctx).load(urls.get(position)).into(holder.iv);
         if (is!=null){
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -57,7 +59,7 @@ Irecyler is;
     }
     @Override
     public int getItemCount() {
-        return urls.length;
+        return urls.size();
     }
 
     public class Vh extends RecyclerView.ViewHolder {

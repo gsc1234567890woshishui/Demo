@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/lpatternlockibrary" />
             <option value="$PROJECT_DIR$/parallaxmylib" />
+            <option value="$PROJECT_DIR$/refushlib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
