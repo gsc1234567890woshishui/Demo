@@ -41,9 +41,12 @@
         <activity android:name=".activitys.ThirdCenter"></activity>
         <activity android:name=".activitys.AddPage"></activity>
         <activity android:name=".activitys.MakeQrbitmap1"></activity>
+        <activity android:name=".activitys.NohttpDemo"></activity>
+        <activity android:name=".activitys.FileDownappDemo"></activity>
         <!---表单验证库页面-->
         <activity android:name=".forms.FormAct"></activity>
         <activity android:name=".lock.LockTest"></activity>
+        <activity android:name=".activitys.FileDownappXutilsDemo"></activity>
         <activity android:name="me.zhanghai.android.patternlock.SetPatternActivity"></activity>
     <activity android:name=".lock.SampleConfirmPatternActivity"></activity>
         <activity android:name="me.zhanghai.android.patternlock.ConfirmPatternActivity"></activity>

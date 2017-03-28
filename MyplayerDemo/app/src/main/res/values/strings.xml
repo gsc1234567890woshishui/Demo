@@ -2,4 +2,5 @@
     <string name="app_name">视频播放器</string>
     <string name="name" >输入不能为空</string>
     <string name="email" >输入必须为邮箱</string>
+    <string name="download_progress">已下载：%1$d&#037;&#037;</string>
 </resources>

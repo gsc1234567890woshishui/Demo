@@ -41,7 +41,6 @@ public class DataEngine {
         }
         return datas;
     }
-
     public static View getCustomHeaderOrFooterView(Context context) {
         List<View> datas = new ArrayList<>();
         datas.add(View.inflate(context, R.layout.view_one, null));

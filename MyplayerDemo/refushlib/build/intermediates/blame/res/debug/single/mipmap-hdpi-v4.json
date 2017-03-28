@@ -32,12 +32,12 @@
         "source": "E:\\gsc\\Demo\\MyplayerDemo\\refushlib\\src\\main\\res\\mipmap-hdpi\\bga_refresh_loading07.png"
     },
     {
-        "merged": "E:\\gsc\\Demo\\MyplayerDemo\\refushlib\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\bga_refresh_loading11.png",
-        "source": "E:\\gsc\\Demo\\MyplayerDemo\\refushlib\\src\\main\\res\\mipmap-hdpi\\bga_refresh_loading11.png"
-    },
-    {
         "merged": "E:\\gsc\\Demo\\MyplayerDemo\\refushlib\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\bga_refresh_loading.png",
         "source": "E:\\gsc\\Demo\\MyplayerDemo\\refushlib\\src\\main\\res\\mipmap-hdpi\\bga_refresh_loading.png"
+    },
+    {
+        "merged": "E:\\gsc\\Demo\\MyplayerDemo\\refushlib\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\bga_refresh_loading11.png",
+        "source": "E:\\gsc\\Demo\\MyplayerDemo\\refushlib\\src\\main\\res\\mipmap-hdpi\\bga_refresh_loading11.png"
     },
     {
         "merged": "E:\\gsc\\Demo\\MyplayerDemo\\refushlib\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\bga_refresh_loading01.png",
