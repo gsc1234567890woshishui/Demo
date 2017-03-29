@@ -53,6 +53,7 @@
     <activity android:name=".views.Zuniview"></activity>
         <activity android:name=".views.ParallaxScrollViewActivity"></activity>
         <activity android:name=".tabs.Tab1"></activity>
+        <activity android:name=".activitys.FileDownappOKGODemo"></activity>
     </application>
 
 </manifest>

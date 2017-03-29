@@ -55,6 +55,9 @@ dependencies {
     compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
     //多种下拉刷新效果、上拉加载更多、可配置自定义头部广告位
     compile project(':refushlib')
+    compile 'com.lzy.net:okgo:+'        //版本号使用 + 可以自动引用最新版
+    compile 'com.lzy.net:okrx:+'        //版本号使用 + 可以自动引用最新版
+    compile 'com.lzy.net:okserver:+'    //版本号使用 + 可以自动引用最新版
     compile 'com.github.HotBitmapGG:RingProgressBar:V1.2.2'
     compile 'com.github.tibolte:elasticdownload:1.0.+'
     compile 'cn.bingoogolapple:bga-banner:1.0.0@aar'
