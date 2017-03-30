@@ -1,16 +1,24 @@
 package com.example.administrator.myplayerdemo;
 
 import android.app.Application;
+import android.content.Context;
+import android.os.Environment;
+import android.util.Log;
 
 import com.example.administrator.myplayerdemo.test.ActivityComponent;
 import com.example.administrator.myplayerdemo.test.Student;
+
+import com.liulishuo.filedownloader.FileDownloader;
 import com.lzy.okgo.OkGo;
 import com.yanzhenjie.nohttp.Logger;
 import com.yanzhenjie.nohttp.NoHttp;
 
+
 import org.xutils.DbManager;
 import org.xutils.x;
 
+import java.io.File;
+import java.net.Proxy;
 import java.util.logging.Level;
 
 
@@ -40,9 +48,11 @@ private static MyApp instance;
         NoHttp.initialize(this); // NoHttp默认初始化。
         Logger.setDebug(true); // 开启NoHttp调试模式。
         Logger.setTag("gsc"); // 设置NoHttp打印Log的TAG。
+          initfile();
     }
-
-
+    private void initfile() {
+        FileDownloader.init(this);
+    }
 
 
 }

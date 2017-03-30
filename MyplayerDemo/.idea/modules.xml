@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/MyplayerDemo.iml" filepath="$PROJECT_DIR$/MyplayerDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/downloaderlibrary-93a1a23a260080a8c63debf490bbe5d66a4d4f10/downloaderlibrary-93a1a23a260080a8c63debf490bbe5d66a4d4f10.iml" filepath="$PROJECT_DIR$/downloaderlibrary-93a1a23a260080a8c63debf490bbe5d66a4d4f10/downloaderlibrary-93a1a23a260080a8c63debf490bbe5d66a4d4f10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filedownlibrary/filedownlibrary.iml" filepath="$PROJECT_DIR$/filedownlibrary/filedownlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/lpatternlockibrary/lpatternlockibrary.iml" filepath="$PROJECT_DIR$/lpatternlockibrary/lpatternlockibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/parallaxmylib/parallaxmylib.iml" filepath="$PROJECT_DIR$/parallaxmylib/parallaxmylib.iml" />
