@@ -18,6 +18,7 @@ import com.liulishuo.filedownloader.FileDownloadListener;
 import com.liulishuo.filedownloader.FileDownloader;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.FileCallback;
+import com.xiaochen.progressroundbutton.AnimDownloadProgressButton;
 import com.yanzhenjie.permission.AndPermission;
 import com.yanzhenjie.permission.PermissionNo;
 import com.yanzhenjie.permission.PermissionYes;
@@ -32,6 +33,7 @@ import okhttp3.Response;
 public class FileDownDemo  extends Activity implements View.OnClickListener {
     private RingProgressBar b;
     private Button but,btn_stop;
+    private AnimDownloadProgressButton anim_btn;
     private BaseDownloadTask baseDownloadTask;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,8 @@ public class FileDownDemo  extends Activity implements View.OnClickListener {
         but= (Button) findViewById(R.id.btn);
         btn_stop= (Button) findViewById(R.id.btn_stop);
         btn_stop.setOnClickListener(this);
+        anim_btn= (AnimDownloadProgressButton) findViewById(R.id.anim_btn);
+        anim_btn.setOnClickListener(this);
         but.setOnClickListener(this);
     }
       @Override
@@ -79,6 +83,7 @@ public class FileDownDemo  extends Activity implements View.OnClickListener {
                     @Override
                     protected void progress(BaseDownloadTask task, int soFarBytes, int totalBytes) {
                         b.setProgress(soFarBytes);
+                        anim_btn.setText("下载中"+soFarBytes/totalBytes*100+"%");
                         b.setMax(totalBytes);
 
                     }
@@ -94,6 +99,7 @@ public class FileDownDemo  extends Activity implements View.OnClickListener {
                     @Override
                     protected void completed(BaseDownloadTask task) {
                         Log.i("gsc", "下载完成=" + task.getPath());
+                        anim_btn.setText("下载完成");
                         AppUtils.installapp(FileDownDemo.this, task.getPath());
                     }
 
@@ -128,6 +134,9 @@ public class FileDownDemo  extends Activity implements View.OnClickListener {
                         .permission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
                         .send();
             }
+        }
+        if (v.getId()==R.id.anim_btn){
+            downApp();
         }
 
     }
