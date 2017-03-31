@@ -21,25 +21,18 @@ import com.lzy.okgo.callback.FileCallback;
 import com.yanzhenjie.permission.AndPermission;
 import com.yanzhenjie.permission.PermissionNo;
 import com.yanzhenjie.permission.PermissionYes;
-
-
-
 import java.io.File;
 import java.util.List;
-
 import io.netopen.hotbitmapgg.library.view.RingProgressBar;
 import okhttp3.Call;
 import okhttp3.Response;
-
 /**
  * Created by Administrator on 2017/3/30 0030.
  */
 public class FileDownDemo  extends Activity implements View.OnClickListener {
-
     private RingProgressBar b;
     private Button but,btn_stop;
     private BaseDownloadTask baseDownloadTask;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,7 +64,6 @@ public class FileDownDemo  extends Activity implements View.OnClickListener {
             Toast.makeText(getApplicationContext(),"权限被拒绝....",Toast.LENGTH_LONG).show();
         }
     }
-
     private void downApp() {
        baseDownloadTask = FileDownloader.getImpl().create("http://api.nohttp.net/download/1.apk")
                 .setPath(Environment.getExternalStorageDirectory() + "/app.apk", false).setForceReDownload(true)
@@ -79,7 +71,6 @@ public class FileDownDemo  extends Activity implements View.OnClickListener {
                     @Override
                     protected void pending(BaseDownloadTask task, int soFarBytes, int totalBytes) {
                     }
-
                     @Override
                     protected void connected(BaseDownloadTask task, String etag, boolean isContinue, int soFarBytes, int totalBytes) {
 
@@ -119,9 +110,7 @@ public class FileDownDemo  extends Activity implements View.OnClickListener {
                     }
                 });
         baseDownloadTask.start();
-
     }
-
     @Override
     public void onClick(View v) {
         if (v.getId()==R.id.btn_stop){
