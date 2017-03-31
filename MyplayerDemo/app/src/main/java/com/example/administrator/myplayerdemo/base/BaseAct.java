@@ -2,6 +2,8 @@ package com.example.administrator.myplayerdemo.base;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 
 import com.example.administrator.myplayerdemo.R;
@@ -10,7 +12,7 @@ import com.example.administrator.myplayerdemo.R;
  * Created by Administrator on 2017/3/13 0013.
  */
 
-public abstract class BaseAct extends Activity {
+public abstract class BaseAct extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
