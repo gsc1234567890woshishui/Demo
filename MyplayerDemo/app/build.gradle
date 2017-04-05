@@ -83,5 +83,5 @@ dependencies {
     compile 'com.jph.takephoto:takephoto_library:4.0.3'
     //Optional: see how to use the utility.
     compile 'com.xiaochendev.progressroundbtn:library:2.0.0'
-    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
 }

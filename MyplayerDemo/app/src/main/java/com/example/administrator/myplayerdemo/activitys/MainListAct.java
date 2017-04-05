@@ -43,7 +43,7 @@ public class MainListAct extends BaseList {
         test.SetName("fdy");
         test.SetAge(30);
         Log.i("gsc",test.getName());
-        String[] mdatas={"生成二维码图片","输入网络地址生成二维码","实例网络地址和二维码","添加到数据库Db","添加表单验证库的使用例子","手势解锁例子","验证手势例子","listview阻尼效果视图","scrollview阻尼效果视图","Tabs(包含下拉刷新框架)","文件下载Demo(Nohttp)","文件下载Demo(xutils3)","文件下载（OKGO）","文件下载（filedown）","smarttabs","相册库(TakePhoto)"};
+        String[] mdatas={"生成二维码图片","输入网络地址生成二维码","实例网络地址和二维码","添加到数据库Db","添加表单验证库的使用例子","手势解锁例子","验证手势例子","listview阻尼效果视图","scrollview阻尼效果视图","Tabs(包含下拉刷新框架)","文件下载Demo(Nohttp)","文件下载Demo(xutils3)","文件下载（OKGO）","文件下载（filedown）","smarttabs","相册库(TakePhoto)","Okhttp请求实例"};
         getListView().setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,mdatas));
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -116,6 +116,9 @@ public class MainListAct extends BaseList {
                 break;
             case 15:
                  startact(PhotoPic.class);
+                break;
+            case 16:
+                startact(OKhttpDemo.class);
                 break;
         }
     }

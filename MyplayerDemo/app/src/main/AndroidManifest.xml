@@ -55,11 +55,9 @@
         <activity android:name=".tabs.Tab1"></activity>
         <activity android:name=".activitys.FileDownappOKGODemo"></activity>
         <activity android:name=".activitys.FileDownDemo"></activity>
-        <activity android:name=".activitys.SmartTabs"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+        <activity android:name=".activitys.SmartTabs"></activity>
+        <activity android:name=".activitys.OKhttpDemo"/>"
+
         <activity android:name=".activitys.PhotoPic"></activity>
     </application>
 
